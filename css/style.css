@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif; 
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3.4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.6rem;
+}
+
+h4{
+    font-size: 2.6rem;
+    font-family: 'Nunito sans', 'sans-serif';
+    text-decoration: underline;
+}
+
+h1,h2,h3{
+    background-color: rgba(36, 37, 44, 0.6);
+    text-decoration: underline;
+    font-family: 'Nunito sans', 'sans-serif';
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+
+nav{
+    background-color: rgba(252, 7, 7, 0.8);
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    nav a img{
+        width: 9rem;
+        margin: 0 20px;
+        padding-top: 3px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding-right: 10px;
+        justify-content: space-evenly;
+    }
+            nav ul li a{
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 2rem;
+                padding: 0 5px;
+            }
+            nav ul li a:hover{
+                color: #bb0a0a;
+                background-color: black;
+                text-decoration: underline;
+            }
+
+header img{
+    width: 100%;
+}
+
+main article section p, figcaption{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(60, 18, 99, 0.6);
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding: 5px 0;
+    margin: 0px;
+    width: 100%;
+    border: solid rgb(130, 141, 163) 1px;
+    overflow-x: none;
+    height: 90%;
+}
+
+
+.flexContainer{
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgba(233, 226, 221, 0.8);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.figureImg{
+    width: 40%;
+    padding: 5px 10px;
+}
+
+main article section figure{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rowReverse{
+    flex-direction: row-reverse;
+}
+
+.justiEvenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "pie pie pie pie"
+}
+
+.tittle{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.tittle h1, h2{
+    width: 100%;
+}
+
+.main{
+    grid-area: main;
+    width: 100%;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.pie{
+    text-align: center;
+    background-color: rgba(9, 21, 71, 0.8);
+    grid-area: pie;
+}
+
+.pieIcon{
+    width: 30px;
+}
+
+.gridCont{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "descrip descrip descrip descrip"
+    "hiper hiper hiper hiper"
+    "toni toni toni toni"
+    "fuerza fuerza fuerza fuerza"
+    "res res res res";
+}
+
+.descripcion{
+    grid-area: descrip;
+    width: 100%;
+}
+
+.hipertrofia{
+    grid-area: hiper;
+    width: 100%;
+}
+
+.tonificacion{
+    grid-area: toni;
+    width: 100%;
+}
+
+.fuerza{
+    grid-area: fuerza;
+    width: 100%;
+}
+
+.resistencia{
+    grid-area: res;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .flexContainer{
+        flex-direction: column;
+    }
+    .figureImg{
+        max-width: 100%;
+        width: auto;
+    }
+}
