@@ -40,7 +40,7 @@ h1,h2,h3{
 
 
 nav{
-    background-color: rgba(252, 7, 7, 0.8);
+    background-color: rgba(233, 86, 86, 0.8);
     width: 100%;
     position: sticky;
     display: flex;
@@ -51,6 +51,7 @@ nav{
         width: 9rem;
         margin: 0 20px;
         padding-top: 3px;
+        cursor: pointer;
     }
     nav ul {
         list-style: none;
@@ -64,21 +65,29 @@ nav{
                 font-family: 'Nunito Sans', sans-serif;
                 font-size: 2rem;
                 padding: 0 5px;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+
             }
             nav ul li a:hover{
-                color: #bb0a0a;
-                background-color: black;
-                text-decoration: underline;
+                color: #1c0abb;
+                background-size: 100% 2px;
+                list-style: none;
+                font-weight: 550;
+                cursor: pointer;
             }
 
 header img{
     width: 100%;
 }
 
-main article section p, figcaption{
+main article section p{
     text-align: center;
     font-size: 2rem;
-    background-color: rgba(60, 18, 99, 0.6);
+    background-color: rgba(60, 18, 99, 0.2);
     line-height: 2.2rem;
     font-weight: 400;
     padding: 5px 0;
@@ -161,7 +170,7 @@ main article section figure{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(auto, 1fr);
     grid-template-areas:
     "descrip descrip descrip descrip"
     "hiper hiper hiper hiper"
@@ -170,7 +179,7 @@ main article section figure{
     "res res res res";
 }
 
-.descripcion{
+#descripcion{
     grid-area: descrip;
     width: 100%;
 }
@@ -203,4 +212,12 @@ main article section figure{
         max-width: 100%;
         width: auto;
     }
+    .contenedorGrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+}
+
+@keyframe{
+    
 }

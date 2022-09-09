@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gimnasio</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
 <div class="contenedorGrid"> 
-    <nav class="nav">
+    <nav class="nav wow fadeInUp">
         <a href="index.html">
             <img src="./img/Logo.jpg" alt="Logo del Gimnasio">
         </a>
@@ -33,11 +34,11 @@
         </ul>
     </nav>
     <main class="main">
-        <header>
+        <header class="wow fadeInLeft">
             <img src="./img/Header.jpg" alt="">
         </header>
         <article>
-            <section>
+            <section class="wow fadeInLeft">
                 <h1>Rast, entrená en serio</h1>
                 <div class="flexContainer">
                     <img src="./img/Index1.jpg" alt="Imagen de entrenamiento" class="figureImg">
@@ -46,7 +47,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="wow fadeInLeftBig">
                 <h2>Tu salud nos importa</h2>
                 <div class="flexContainer rowReverse">
                     <img src="./img/Index2.jpg" alt="Imagen de entrenamiento" class="figureImg">
@@ -55,7 +56,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="wow fadeInRightBig">
                 <h2>Cuida tu cuerpo</h2>
                 <div class="flexContainer">
                     <img src="./img/Index3.jpg" alt="Imagen de entrenamiento" class="figureImg">
@@ -76,5 +77,9 @@
         </a>
     </footer>
 </div>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

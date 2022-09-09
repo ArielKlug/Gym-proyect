@@ -7,9 +7,10 @@
     <title>Gimnasio</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
-    <nav>
+    <nav class="wow fadeInUp">
         <a href="index.html">
             <img src="./img/Logo.jpg" alt="Logo del Gimnasio">
         </a>
@@ -31,19 +32,19 @@
             </li>
         </ul>
     </nav>
-    <header>
+    <header class="wow fadeInLeft">
         <img src="./img/Header.jpg" alt="">
     </header>
     <div class="gridCont">
     <main>
         <article>
-            <section class="descripcion">
+            <section id="descripcion" class="wow fadeInLeft">
                 <div class="tittle">
                 <h1>¿Qué tipo de ejercicios existen?</h1>
-            </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, vero ipsa explicabo soluta dolorum quasi numquam quidem molestiae ea earum possimus dolore veniam nesciunt facilis suscipit officia voluptatum architecto.</p>
             </section>
-            <section class="hipertrofia">
+            <section class="hipertrofia wow fadeInLeftBig">
                 <div class="tittle">
                 <h2>Hipertrofia</h2>
                 </div>
@@ -54,7 +55,7 @@
                     </div>
                 </div>
             </section>
-            <section class="tonificacion">
+            <section class="tonificacion wow fadeInRightBig">
                 <div class="tittle">
                 <h2>Tonificación</h2>
                 </div>
@@ -65,7 +66,7 @@
                     </div>
                 </div>
             </section>
-            <section class="fuerza">
+            <section class="fuerza wow fadeInLeftBig">
                 <div class="tittle">
                 <h2>Fuerza</h2>
                 </div>
@@ -76,7 +77,7 @@
                     </div>
                 </div>
             </section>
-            <section class="resistencia">
+            <section class="resistencia wow fadeInRightBig">
                 <div class="tittle">
                 <h2>Resistencia</h2>
                 </div>
@@ -99,5 +100,9 @@
             <img src="./img/Instagram img.png" alt="Seguinos en Instagram" class="pieIcon">
         </a>
     </footer>
+    <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 </html>
