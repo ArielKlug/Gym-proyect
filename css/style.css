@@ -217,7 +217,3 @@ main article section figure{
         grid-template-rows: repeat(auto, 1fr);
     }
 }
-
-@keyframe{
-    
-}
