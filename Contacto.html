@@ -20,7 +20,7 @@
             <span class="navbar-toggler-icon"></span>
             </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="Ejercicios.html">Ejercicios</a>
                     </li>
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="Rutinas.html">Rutinas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Nutrición.html">Nutrición</a>
+                        <a class="nav-link" href="Nutricion.html">Nutrición</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Nosotros.html">Nosotros</a>
@@ -44,28 +44,52 @@
         <img src="./img/Header.jpg" alt="">
     </header>
     <main>
-        <h1>Contacto</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit in fugiat maxime quisquam nihil tenetur consequuntur impedit porro voluptatem blanditiis officiis nostrum libero aperiam at, error corrupti tempore quos. Rem.</p>
-            <form action="">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Ingrese su Email" required>
-                <br>
-                <label for="telefono">Teléfono:</label>
-                <input type="Tel" id="telefono" placeholder="Ingrese su teléfono">
-                <br>
-                <label for="comentarios">Comentarios</label>
-                <br>
-                <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
-                <br>
-                <input type="reset" Value="Cancelar">
-                <input type="submit" value="Enviar">
-            </form>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167132768474!2d-58.383759085476335!3d-34.603738880459446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1660084979001!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+        <section class="content">
+            <h1 class="logo">Contactanos</h1>
+            <article class="contact-wrapper wow bounceInUp">
+                <div class="contact-form">
+                    <form action="">
+                        <p>
+                            <label class="pt-2" >Nombre completo</label>
+                            <input type="text" name="fullname" required>
+                        </p>
+                        <p>
+                            <label class="pt-2">Dirección Email</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label class="pt-2">Número de teléfono</label>
+                            <input type="tel" name="Número de teléfono">
+                        </p>
+                        <p>
+                            <label class="pt-2">Asunto</label>
+                            <input type="text" name="Asunto" required>
+                        </p>
+                        <p class="block">
+                           <label class="pt-2">Mensaje</label> 
+                           <textarea name="Mensaje" rows="1" required></textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más información</h4>
+                    <ul>
+                        <li class="textWhite"><p class="fas fa-map-marker-alt"></p> Calle falsa 123</li>
+                        <li class="textWhite"><p class="fas fa-phone"></p> (+54) 496 234 567</li>
+                        <li class="textWhite"><p class="fas fa-envelope-open-text"></p> Contacto@sitioweb.com</li>
+                    </ul>
+                    <p class="textWhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                    <p class="textWhite">RastGimnacio.com</p>
+                </div>
+            </article>
+        </section> 
     </main>
-    <footer class="pie">
+    <footer class="contact-info pie">
         <h4>Seguinos en nuestras redes sociales</h4>
         <a href="https://www.coderhouse.com/" target="_blank">
             <img src="./img/Facebook img.png" alt="Seguinos en Facebook" class="pieIcon">
